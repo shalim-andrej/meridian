@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MERIDIAN — резиденции бизнес-класса в Москве | ЖК у Москва-Сити</title>
+  <meta name="description" content="MERIDIAN — 210 резиденций бизнес-класса в 48-этажной башне на Пресненской набережной. Панорамные окна 3,4 м, приватный парк 2 га, вид на Москва-Сити. Сдача — IV кв. 2026, от 24,9 млн ₽. Эскроу-счета.">
+  <meta name="theme-color" content="#FFFFFF">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MERIDIAN">
+  <meta property="og:title" content="MERIDIAN — резиденции бизнес-класса в Москве | ЖК у Москва-Сити">
+  <meta property="og:description" content="210 резиденций в 48-этажной башне. Панорамные окна 3,4 м, приватный парк 2 га и вид на Москва-Сити. Сдача — IV кв. 2026, от 24,9 млн ₽.">
+  <meta property="og:image" content="https://meridian-msk.ru/assets/img/hero-poster.jpg">
+  <meta property="og:locale" content="ru_RU">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon: bronze M° -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%2314161A'/%3E%3Cpath d='M12 48V20l16 18 16-18v28' fill='none' stroke='%23A67C52' stroke-width='5' stroke-linecap='square'/%3E%3Ccircle cx='51' cy='13' r='4' fill='%23A67C52'/%3E%3C/svg%3E">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ApartmentComplex",
+    "name": "MERIDIAN — резиденции бизнес-класса",
+    "url": "https://meridian-msk.ru/",
+    "image": "https://meridian-msk.ru/assets/img/hero-poster.jpg",
+    "description": "210 резиденций бизнес-класса в 48-этажной башне на Пресненской набережной. Панорамные окна 3,4 м, приватный парк 2 га, вид на Москва-Сити. Сдача — IV квартал 2026 года.",
+    "telephone": "+7 (495) 255-04-88",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Пресненская набережная, 12",
+      "addressLocality": "Москва",
+      "addressCountry": "RU"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 55.7494, "longitude": 37.5397 },
+    "numberOfFloors": 48,
+    "numberOfAvailableAccommodationUnits": 210,
+    "amenityFeature": [
+      { "@type": "LocationFeatureSpecification", "name": "Приватный парк 2 га", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Панорамные окна 3,4 м", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Эскроу-счета", "value": true }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ============ PRELOADER ============ -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__word">
+      <span class="preloader__letter">M</span>
+      <span class="preloader__letter">E</span>
+      <span class="preloader__letter">R</span>
+      <span class="preloader__letter">I</span>
+      <span class="preloader__letter">D</span>
+      <span class="preloader__letter">I</span>
+      <span class="preloader__letter">A</span>
+      <span class="preloader__letter">N</span>
+      <span class="preloader__letter preloader__letter--deg">°</span>
+    </div>
+    <div class="preloader__line"><span class="preloader__bar" id="preloaderBar"></span></div>
+    <span class="preloader__percent" id="preloaderPercent">0%</span>
+  </div>
+
+  <!-- ============ SCROLL PROGRESS ============ -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ============ CUSTOM CURSOR ============ -->
+  <div class="cursor" id="cursor" aria-hidden="true">
+    <span class="cursor__ring"></span>
+    <span class="cursor__dot"></span>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#hero" class="logo" aria-label="MERIDIAN — на главную">MERIDIAN<span class="logo__deg">°</span></a>
+      <nav class="header__nav" aria-label="Основная навигация">
+        <a class="header__link" href="#about">О проекте</a>
+        <a class="header__link" href="#residences">Резиденции</a>
+        <a class="header__link" href="#mortgage">Ипотека</a>
+        <a class="header__link" href="#gallery">Галерея</a>
+        <a class="header__link" href="#contacts">Контакты</a>
+      </nav>
+      <div class="header__actions">
+        <a href="#residences" class="btn btn--dark btn--sm header__cta" data-magnetic>Выбрать резиденцию</a>
+        <button class="burger" id="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileMenu">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ MOBILE MENU ============ -->
+  <div class="mmenu" id="mobileMenu" aria-hidden="true">
+    <nav class="mmenu__nav" aria-label="Мобильная навигация">
+      <a class="mmenu__link" href="#about"><em>01</em>О проекте</a>
+      <a class="mmenu__link" href="#residences"><em>02</em>Резиденции</a>
+      <a class="mmenu__link" href="#mortgage"><em>03</em>Ипотека</a>
+      <a class="mmenu__link" href="#gallery"><em>04</em>Галерея</a>
+      <a class="mmenu__link" href="#contacts"><em>05</em>Контакты</a>
+    </nav>
+    <div class="mmenu__foot">
+      <a class="mmenu__phone" href="tel:+74952550488">+7 (495) 255-04-88</a>
+      <p class="mmenu__addr">Пресненская наб., 12 · 10:00–20:00</p>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ============ 1. HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero__media" aria-hidden="true">
+        <img class="hero__poster" src="assets/img/hero-poster.jpg" alt="" width="1280" height="720" fetchpriority="high">
+        <video class="hero__video" id="heroVideo" autoplay muted loop playsinline preload="auto" tabindex="-1">
+          <source src="assets/video/hero.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <p class="hero__kicker h-reveal" style="--i:0">Класс резиденций бизнес · Пресненская набережная</p>
+        <h1 class="hero__title h-reveal" style="--i:1">Резиденции, которые&nbsp;<span class="hero__accent">переживут время</span></h1>
+        <p class="hero__sub h-reveal" style="--i:2">210 резиденций в 48-этажной башне. Панорамные окна 3,4&nbsp;м, приватный парк 2&nbsp;га и вид на Москва-Сити.</p>
+        <div class="hero__cta h-reveal" style="--i:3">
+          <a href="#contacts" class="btn btn--dark" data-magnetic>Подобрать резиденцию</a>
+          <a href="#residences" class="btn btn--ghost" data-magnetic>Смотреть планировки</a>
+        </div>
+      </div>
+
+      <div class="hero__strip h-reveal" style="--i:4">
+        <div class="hero__strip-inner">
+          <span class="hero__strip-item">Сдача — IV кв. 2026</span>
+          <span class="hero__strip-item">от 24,9 млн ₽</span>
+          <span class="hero__strip-item">Эскроу-счета</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track" id="marqueeTrack">
+        <div class="marquee__seq">
+          <span>Сдан IV кв. 2026</span><i>—</i>
+          <span>Эскроу</span><i>—</i>
+          <span>Парк 2 га</span><i>—</i>
+          <span>Панорама 3,4 м</span><i>—</i>
+          <span>Сдан IV кв. 2026</span><i>—</i>
+          <span>Эскроу</span><i>—</i>
+          <span>Парк 2 га</span><i>—</i>
+          <span>Панорама 3,4 м</span><i>—</i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ ЦИФРЫ ============ -->
+    <section class="numbers" id="numbers" aria-label="MERIDIAN в цифрах">
+      <div class="numbers__grid" data-stagger>
+        <div class="numbers__item reveal">
+          <span class="numbers__value"><span data-count="48">0</span></span>
+          <span class="numbers__label">этажей в башне</span>
+        </div>
+        <div class="numbers__item reveal">
+          <span class="numbers__value"><span data-count="210">0</span></span>
+          <span class="numbers__label">резиденций</span>
+        </div>
+        <div class="numbers__item reveal">
+          <span class="numbers__value"><span data-count="2">0</span></span>
+          <span class="numbers__label">гектара приватного парка</span>
+        </div>
+        <div class="numbers__item reveal">
+          <span class="numbers__value"><span data-count="5">0</span></span>
+          <span class="numbers__label">минут до Москва-Сити</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 2. О ПРОЕКТЕ ============ -->
+    <section class="about section section--alt" id="about">
+      <div class="section__container">
+        <header class="section-head reveal">
+          <div class="section-head__meta">
+            <span class="section-head__num">01</span>
+            <span class="section-head__rule" aria-hidden="true"></span>
+            <span class="section-head__label">О проекте</span>
+          </div>
+          <h2 class="section-head__title">Архитектура как&nbsp;подпись</h2>
+        </header>
+
+        <div class="about__grid">
+          <figure class="about__main reveal">
+            <img src="assets/img/building-1.jpg" alt="Белый монолитный фасад башни MERIDIAN с бронзовыми ламелями" width="1500" height="1291" loading="lazy" decoding="async">
+            <figcaption>Башня MERIDIAN · фасад — бронзовые ламели и низкоэмиссионное стекло</figcaption>
+          </figure>
+
+          <div class="about__text reveal" data-delay="1">
+            <p class="about__lead">Авторское бюро FORMA спроектировало башню как вертикальный пейзаж: каждый уровень смещён относительно предыдущего, и силуэт меняется в зависимости от точки обзора.</p>
+            <p class="about__desc">Фасад собран из бронзовых ламелей и панорамного стекла — на закате башня читается единым золотым контуром. Лобби высотой 9 метров с остеклением в пол встречает резидентов скульптурной композицией и видом на набережную.</p>
+            <ul class="about__list">
+              <li><strong>Лобби 9 м</strong> — панорама на реку, стойка Concierge 24/7</li>
+              <li><strong>Фасад</strong> — вертикальные бронзовые ламели, шумоизоляция 52 дБ</li>
+              <li><strong>Парк 2 га</strong> — закрытая территория для резидентов</li>
+            </ul>
+            <a class="link-arrow" href="#residences">Смотреть резиденции</a>
+          </div>
+        </div>
+
+        <div class="about__row">
+          <figure class="about__small reveal">
+            <img src="assets/img/building-2.jpg" alt="Архитектурная визуализация балконов резиденций MERIDIAN" width="1538" height="1025" loading="lazy" decoding="async">
+            <figcaption>Балконы с бронзовым контуром</figcaption>
+          </figure>
+          <figure class="about__tall reveal" data-delay="1">
+            <div class="parallax" data-speed="0.12">
+              <img src="assets/img/tower-1.jpg" alt="Минималистичные бежевые балконы башни MERIDIAN" width="1920" height="2968" loading="lazy" decoding="async">
+            </div>
+            <figcaption>Ритм балконов · южный фасад</figcaption>
+          </figure>
+          <div class="about__quote reveal" data-delay="2">
+            <p class="about__quote-text">«Мы не строили небоскрёб — мы рисовали светом линию горизонта».</p>
+            <p class="about__quote-author">Бюро FORMA · авторский коллектив проекта</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. РЕЗИДЕНЦИИ · КАТАЛОГ ============ -->
+    <section class="catalog section" id="residences">
+      <div class="section__container">
+        <header class="section-head reveal">
+          <div class="section-head__meta">
+            <span class="section-head__num">02</span>
+            <span class="section-head__rule" aria-hidden="true"></span>
+            <span class="section-head__label">Резиденции</span>
+          </div>
+          <div class="section-head__row">
+            <h2 class="section-head__title">Пять форматов&nbsp;света</h2>
+            <p class="section-head__count" id="catalogCount">5 резиденций</p>
+          </div>
+        </header>
+
+        <div class="filters reveal" role="group" aria-label="Фильтр резиденций по типу">
+          <button class="filters__chip is-active" type="button" data-filter="all" aria-pressed="true">Все</button>
+          <button class="filters__chip" type="button" data-filter="studio" aria-pressed="false">Студии</button>
+          <button class="filters__chip" type="button" data-filter="one" aria-pressed="false">1 спальня</button>
+          <button class="filters__chip" type="button" data-filter="two" aria-pressed="false">2 спальни</button>
+          <button class="filters__chip" type="button" data-filter="pent" aria-pressed="false">Пентхаусы</button>
+        </div>
+
+        <div class="cards" id="cardsGrid">
+
+          <article class="card" data-groups="studio" data-interest="studio">
+            <figure class="card__media">
+              <img src="assets/img/living-2.jpg" alt="Студия 42 м² — минималистичная гостиная в светлых тонах" width="1344" height="756" loading="lazy" decoding="async">
+              <span class="card__badge">В продаже</span>
+            </figure>
+            <div class="card__body">
+              <div class="card__top">
+                <h3 class="card__title">Студия</h3>
+                <span class="card__index">01</span>
+              </div>
+              <p class="card__meta">42 м² · этаж 12–34 · юго-запад</p>
+              <div class="card__foot">
+                <span class="card__price">24,9 млн ₽</span>
+                <button class="card__btn" type="button" data-interest="studio">
+                  Хочу смотреть
+                  <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-groups="one" data-interest="one">
+            <figure class="card__media">
+              <img src="assets/img/kitchen-1.jpg" alt="1 спальня 68 м² — кухня с белым островом и тёплым светом" width="1920" height="1282" loading="lazy" decoding="async">
+              <span class="card__badge">В продаже</span>
+            </figure>
+            <div class="card__body">
+              <div class="card__top">
+                <h3 class="card__title">1 спальня</h3>
+                <span class="card__index">02</span>
+              </div>
+              <p class="card__meta">68 м² · этаж 9–41 · юг</p>
+              <div class="card__foot">
+                <span class="card__price">38,4 млн ₽</span>
+                <button class="card__btn" type="button" data-interest="one">
+                  Хочу смотреть
+                  <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-groups="two" data-interest="two">
+            <figure class="card__media">
+              <img src="assets/img/living-1.jpg" alt="2 спальни 96 м² — гостиная с панорамным светом" width="1600" height="987" loading="lazy" decoding="async">
+              <span class="card__badge card__badge--done">Сдан</span>
+            </figure>
+            <div class="card__body">
+              <div class="card__top">
+                <h3 class="card__title">2 спальни</h3>
+                <span class="card__index">03</span>
+              </div>
+              <p class="card__meta">96 м² · этаж 15–44 · юго-восток</p>
+              <div class="card__foot">
+                <span class="card__price">56,7 млн ₽</span>
+                <button class="card__btn" type="button" data-interest="two">
+                  Хочу смотреть
+                  <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-groups="two two-plus" data-interest="two-plus">
+            <figure class="card__media">
+              <img src="assets/img/kitchen-2.jpg" alt="2 спальни+ 112 м² — кремовая кухня с бронзовой фурнитурой" width="1920" height="2304" loading="lazy" decoding="async">
+              <span class="card__badge">В продаже</span>
+            </figure>
+            <div class="card__body">
+              <div class="card__top">
+                <h3 class="card__title">2 спальни+</h3>
+                <span class="card__index">04</span>
+              </div>
+              <p class="card__meta">112 м² · этаж 18–46 · запад, вид на Сити</p>
+              <div class="card__foot">
+                <span class="card__price">71,2 млн ₽</span>
+                <button class="card__btn" type="button" data-interest="two-plus">
+                  Хочу смотреть
+                  <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card" data-groups="pent" data-interest="pent">
+            <figure class="card__media">
+              <img src="assets/img/living-3.jpg" alt="Пентхаус 187 м² — зона отдыха с оливковыми диванами на закате" width="1024" height="1024" loading="lazy" decoding="async">
+              <span class="card__badge card__badge--done">Сдан</span>
+            </figure>
+            <div class="card__body">
+              <div class="card__top">
+                <h3 class="card__title">Пентхаус</h3>
+                <span class="card__index">05</span>
+              </div>
+              <p class="card__meta">187 м² · этажи 47–48 · панорама 360°</p>
+              <div class="card__foot">
+                <span class="card__price">145 млн ₽</span>
+                <button class="card__btn" type="button" data-interest="pent">
+                  Хочу смотреть
+                  <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. ИПОТЕЧНЫЙ КАЛЬКУЛЯТОР ============ -->
+    <section class="calc section section--dark" id="mortgage">
+      <div class="section__container">
+        <header class="section-head section-head--light reveal">
+          <div class="section-head__meta">
+            <span class="section-head__num">03</span>
+            <span class="section-head__rule" aria-hidden="true"></span>
+            <span class="section-head__label">Ипотека</span>
+          </div>
+          <h2 class="section-head__title">Платёж за&nbsp;минуту</h2>
+        </header>
+
+        <div class="calc__grid">
+          <div class="calc__controls reveal">
+            <div class="calc__row">
+              <div class="calc__row-head">
+                <label class="calc__label" for="calcCost">Стоимость резиденции</label>
+                <output class="calc__out" id="calcCostOut" for="calcCost">45 млн ₽</output>
+              </div>
+              <input class="range" type="range" id="calcCost" min="15" max="150" step="1" value="45" aria-label="Стоимость резиденции, млн рублей">
+              <div class="calc__scale"><span>15 млн ₽</span><span>150 млн ₽</span></div>
+            </div>
+
+            <div class="calc__row">
+              <div class="calc__row-head">
+                <label class="calc__label" for="calcDown">Первоначальный взнос</label>
+                <output class="calc__out" id="calcDownOut" for="calcDown">20%</output>
+              </div>
+              <input class="range" type="range" id="calcDown" min="15" max="80" step="1" value="20" aria-label="Первоначальный взнос, процентов">
+              <div class="calc__scale"><span>15%</span><span>80%</span></div>
+            </div>
+
+            <div class="calc__row">
+              <div class="calc__row-head">
+                <label class="calc__label" for="calcTerm">Срок кредита</label>
+                <output class="calc__out" id="calcTermOut" for="calcTerm">20 лет</output>
+              </div>
+              <input class="range" type="range" id="calcTerm" min="5" max="30" step="1" value="20" aria-label="Срок кредита, лет">
+              <div class="calc__scale"><span>5 лет</span><span>30 лет</span></div>
+            </div>
+
+            <div class="calc__badges">
+              <span class="badge badge--bronze">Семейная ипотека</span>
+              <span class="badge">Ставка 5,7% — фикс</span>
+              <span class="badge">Эскроу-счета</span>
+            </div>
+          </div>
+
+          <div class="calc__result reveal" data-delay="1">
+            <p class="calc__result-label">Ежемесячный платёж</p>
+            <p class="calc__payment">
+              <span class="calc__from">от</span>
+              <span class="calc__sum" id="calcPayment">251 800</span>
+              <span class="calc__unit">₽/мес</span>
+            </p>
+            <dl class="calc__stats">
+              <div class="calc__stat">
+                <dt>Сумма кредита</dt>
+                <dd id="calcLoan">36 000 000 ₽</dd>
+              </div>
+              <div class="calc__stat">
+                <dt>Первоначальный взнос</dt>
+                <dd id="calcDownSum">9 000 000 ₽</dd>
+              </div>
+              <div class="calc__stat">
+                <dt>Переплата за срок</dt>
+                <dd id="calcOver">24 422 400 ₽</dd>
+              </div>
+            </dl>
+            <p class="calc__note">Расчёт предварительный, по аннуитетной формуле, и не является офертой. Точные условия — у ипотечных партнёров проекта.</p>
+            <a href="#contacts" class="btn btn--bronze" data-magnetic>Заявка на ипотеку</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. ИНТЕРЬЕРЫ · ГАЛЕРЕЯ ============ -->
+    <section class="gallery section section--alt" id="gallery">
+      <div class="section__container">
+        <header class="section-head reveal">
+          <div class="section-head__meta">
+            <span class="section-head__num">04</span>
+            <span class="section-head__rule" aria-hidden="true"></span>
+            <span class="section-head__label">Интерьеры</span>
+          </div>
+          <h2 class="section-head__title">Свет как&nbsp;материал</h2>
+        </header>
+
+        <div class="masonry" id="masonry" data-stagger>
+          <figure class="masonry__item masonry__item--l reveal" data-lightbox>
+            <img src="assets/img/living-1.jpg" alt="Гостиная пентхауса с панорамным светом и тёплой палитрой" width="1600" height="987" loading="lazy" decoding="async">
+            <figcaption class="masonry__cap">Гостиная · 2 спальни, 96 м²</figcaption>
+          </figure>
+          <figure class="masonry__item masonry__item--p reveal" data-lightbox>
+            <img src="assets/img/kitchen-2.jpg" alt="Кремовая кухня с бронзовой фурнитурой и скрытым хранением" width="1920" height="2304" loading="lazy" decoding="async">
+            <figcaption class="masonry__cap">Кухня · отделка «крем»</figcaption>
+          </figure>
+          <figure class="masonry__item masonry__item--m reveal" data-lightbox>
+            <img src="assets/img/kitchen-1.jpg" alt="Кухня с белым островом и мягким вечерним освещением" width="1920" height="1282" loading="lazy" decoding="async">
+            <figcaption class="masonry__cap">Кухня-остров · 1 спальня, 68 м²</figcaption>
+          </figure>
+          <figure class="masonry__item masonry__item--s reveal" data-lightbox>
+            <img src="assets/img/living-3.jpg" alt="Зона отдыха с оливковыми диванами на фоне заката" width="1024" height="1024" loading="lazy" decoding="async">
+            <figcaption class="masonry__cap">Лаунж · пентхаус, 187 м²</figcaption>
+          </figure>
+          <figure class="masonry__item masonry__item--m reveal" data-lightbox>
+            <img src="assets/img/living-2.jpg" alt="Минималистичная гостиная в светлых тонах с дубовым полом" width="1344" height="756" loading="lazy" decoding="async">
+            <figcaption class="masonry__cap">Гостиная · студия, 42 м²</figcaption>
+          </figure>
+          <figure class="masonry__item masonry__item--p reveal" data-lightbox>
+            <img src="assets/img/tower-2.jpg" alt="Балконы резиденций MERIDIAN на фоне ясного неба" width="1920" height="2400" loading="lazy" decoding="async">
+            <figcaption class="masonry__cap">Терраса · вид на Москву-реку</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. РАСПОЛОЖЕНИЕ ============ -->
+    <section class="location section" id="location">
+      <div class="section__container">
+        <header class="section-head reveal">
+          <div class="section-head__meta">
+            <span class="section-head__num">05</span>
+            <span class="section-head__rule" aria-hidden="true"></span>
+            <span class="section-head__label">Расположение</span>
+          </div>
+          <h2 class="section-head__title">Центр деловой&nbsp;Москвы</h2>
+        </header>
+
+        <div class="location__grid">
+          <ul class="location__list" data-stagger>
+            <li class="location__item reveal">
+              <span class="location__num">01</span>
+              <span class="location__name">Москва-Сити</span>
+              <span class="location__time">5 мин пешком</span>
+            </li>
+            <li class="location__item reveal">
+              <span class="location__num">02</span>
+              <span class="location__name">Метро «Деловой центр»</span>
+              <span class="location__time">7 мин</span>
+            </li>
+            <li class="location__item reveal">
+              <span class="location__num">03</span>
+              <span class="location__name">Аэропорт Шереметьево</span>
+              <span class="location__time">35 мин на авто</span>
+            </li>
+            <li class="location__item reveal">
+              <span class="location__num">04</span>
+              <span class="location__name">Набережная</span>
+              <span class="location__time">2 мин</span>
+            </li>
+          </ul>
+
+          <div class="map reveal" data-delay="1" role="img" aria-label="Абстрактная карта: MERIDIAN в пяти минутах от Москва-Сити">
+            <div class="map__river" aria-hidden="true"></div>
+            <div class="map__road map__road--h" aria-hidden="true"></div>
+            <div class="map__road map__road--v" aria-hidden="true"></div>
+            <div class="map__road map__road--diag" aria-hidden="true"></div>
+            <div class="map__city" aria-hidden="true"><span></span><span></span><span></span></div>
+            <span class="map__label map__label--city">Москва-Сити</span>
+            <span class="map__label map__label--river">Москва-река</span>
+            <span class="map__label map__label--svo">Шереметьево →</span>
+            <div class="map__pin" aria-hidden="true">
+              <span class="map__pulse"></span>
+              <span class="map__pulse map__pulse--late"></span>
+              <span class="map__core"></span>
+            </div>
+            <span class="map__label map__label--pin">MERIDIAN</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 7. ХОД СТРОИТЕЛЬСТВА ============ -->
+    <section class="build section section--alt" id="progress">
+      <div class="section__container">
+        <header class="section-head reveal">
+          <div class="section-head__meta">
+            <span class="section-head__num">06</span>
+            <span class="section-head__rule" aria-hidden="true"></span>
+            <span class="section-head__label">Ход строительства</span>
+          </div>
+          <h2 class="section-head__title">Точно в&nbsp;срок</h2>
+        </header>
+
+        <div class="build__list" id="buildList">
+          <div class="build__row reveal">
+            <div class="build__row-head">
+              <span class="build__name">Корпус 1</span>
+              <span class="build__state build__state--done">Сдан</span>
+              <span class="build__percent" data-count="100" data-suffix="%">0%</span>
+            </div>
+            <div class="build__bar"><span class="build__fill" data-value="100"></span></div>
+          </div>
+          <div class="build__row reveal" data-delay="1">
+            <div class="build__row-head">
+              <span class="build__name">Корпус 2</span>
+              <span class="build__state">В работе</span>
+              <span class="build__percent" data-count="78" data-suffix="%">0%</span>
+            </div>
+            <div class="build__bar"><span class="build__fill" data-value="78"></span></div>
+          </div>
+          <div class="build__row reveal" data-delay="2">
+            <div class="build__row-head">
+              <span class="build__name">Паркинг</span>
+              <span class="build__state">В работе</span>
+              <span class="build__percent" data-count="45" data-suffix="%">0%</span>
+            </div>
+            <div class="build__bar"><span class="build__fill" data-value="45"></span></div>
+          </div>
+        </div>
+        <p class="build__note reveal">Данные обновлены: январь 2026. Ежемесячные фотоотчёты — в презентации проекта.</p>
+      </div>
+    </section>
+
+    <!-- ============ 8. КОНТАКТЫ · ФОРМА ============ -->
+    <section class="contact section" id="contacts">
+      <div class="section__container">
+        <div class="contact__grid">
+          <div class="contact__info">
+            <header class="section-head reveal">
+              <div class="section-head__meta">
+                <span class="section-head__num">07</span>
+                <span class="section-head__rule" aria-hidden="true"></span>
+                <span class="section-head__label">Контакты</span>
+              </div>
+              <h2 class="section-head__title">Презентация&nbsp;PDF</h2>
+            </header>
+            <p class="contact__lead reveal">Оставьте заявку — отправим PDF-презентацию с планировками, ценами и условиями покупки.</p>
+            <ul class="contact__list reveal" data-delay="1">
+              <li class="contact__row">
+                <span class="contact__label">Офис продаж</span>
+                <span class="contact__value">Пресненская наб., 12</span>
+              </li>
+              <li class="contact__row">
+                <span class="contact__label">Телефон</span>
+                <a class="contact__value contact__value--link" href="tel:+74952550488">+7 (495) 255-04-88</a>
+              </li>
+              <li class="contact__row">
+                <span class="contact__label">Часы работы</span>
+                <span class="contact__value">10:00–20:00, ежедневно</span>
+              </li>
+            </ul>
+          </div>
+
+          <form class="form reveal" data-delay="1" id="leadForm" novalidate>
+            <div class="form__fields" id="formBody">
+              <div class="field">
+                <label class="field__label" for="fieldName">Имя</label>
+                <input class="field__input" id="fieldName" name="name" type="text" placeholder="Как к вам обращаться" autocomplete="name">
+                <span class="field__error" id="nameError">Укажите имя — минимум 2 символа</span>
+              </div>
+              <div class="field">
+                <label class="field__label" for="fieldPhone">Телефон</label>
+                <input class="field__input" id="fieldPhone" name="phone" type="tel" inputmode="tel" placeholder="+7 (___) ___-__-__" autocomplete="tel">
+                <span class="field__error" id="phoneError">Укажите телефон полностью</span>
+              </div>
+              <div class="field">
+                <label class="field__label" for="fieldInterest">Интересует</label>
+                <div class="field__select">
+                  <select class="field__input field__input--select" id="fieldInterest" name="interest">
+                    <option value="" selected>Тип резиденции</option>
+                    <option value="studio">Студия — от 24,9 млн ₽</option>
+                    <option value="one">1 спальня — от 38,4 млн ₽</option>
+                    <option value="two">2 спальни — от 56,7 млн ₽</option>
+                    <option value="two-plus">2 спальни+ — от 71,2 млн ₽</option>
+                    <option value="pent">Пентхаус — от 145 млн ₽</option>
+                  </select>
+                  <svg class="field__chevron" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.5 6 6.5 11 1.5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+                </div>
+              </div>
+              <button class="btn btn--dark btn--wide" type="submit" data-magnetic>Получить презентацию PDF</button>
+              <p class="form__note">Нажимая кнопку, вы соглашаетесь с политикой обработки персональных данных.</p>
+            </div>
+
+            <div class="form__success" id="formSuccess" hidden aria-live="polite">
+              <span class="form__check" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M4 12.5 9.5 18 20 6.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+              </span>
+              <p class="form__success-title">Презентация отправлена</p>
+              <p class="form__success-text">Презентация отправлена на <strong id="successPhone">…</strong>. Менеджер свяжется с вами в течение 15 минут.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <a href="#hero" class="footer__logo" aria-label="MERIDIAN — наверх">MERIDIAN<span class="logo__deg">°</span></a>
+        <nav class="footer__nav" aria-label="Навигация в подвале">
+          <a href="#about">О проекте</a>
+          <a href="#residences">Резиденции</a>
+          <a href="#mortgage">Ипотека</a>
+          <a href="#gallery">Галерея</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+      </div>
+      <p class="footer__tagline">Резиденции, которые переживут время.</p>
+      <div class="footer__bottom">
+        <p>© 2026 · Разработка: Kwork Premium</p>
+        <p class="footer__disclaimer">Не является публичной офертой. Планировки, цены и сроки уточняйте у менеджеров проекта.</p>
+        <a href="tel:+74952550488" class="footer__phone">+7 (495) 255-04-88</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ BACK TO TOP ============ -->
+  <button class="totop" id="toTop" type="button" aria-label="Наверх">
+    <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 14V3M3.5 7 8 2.5 12.5 7" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+  </button>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Просмотр фотографии" hidden>
+    <button class="lightbox__close" id="lightboxClose" type="button" aria-label="Закрыть">
+      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3l10 10M13 3 3 13" stroke="currentColor" stroke-width="1.4"/></svg>
+    </button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" type="button" aria-label="Предыдущее фото">
+      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 2 4 8l6 6" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+    </button>
+    <figure class="lightbox__figure">
+      <img class="lightbox__img" id="lightboxImg" src="" alt="">
+      <figcaption class="lightbox__caption">
+        <span id="lightboxCaption"></span>
+        <span class="lightbox__counter" id="lightboxCounter">1 / 6</span>
+      </figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" type="button" aria-label="Следующее фото">
+      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+    </button>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
